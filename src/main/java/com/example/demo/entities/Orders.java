@@ -1,4 +1,5 @@
 package com.example.demo.entities;
+
 import java.util.Date;
 
 import jakarta.persistence.Entity;
@@ -12,85 +13,83 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "orders")
-public class Orders
-{
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int oId;
-	private String oName;
-	private double oPrice;
-	private int oQuantity;
-	private Date orderDate;
-	private double totalAmmout;
-	
-	@ManyToOne
-	@JoinColumn(name="user_u_id")
-	private User user;
+public class Orders {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int oId;
+    private String oName;
+    private double oPrice;
+    private int oQuantity;
+    private Date orderDate;
+    private double totalAmmout;
 
-	public Date getOrderDate() {
-		return orderDate;
-	}
+    @ManyToOne
+    @JoinColumn(name = "user_u_id")
+    private User user;
 
-	public void setOrderDate(Date orderDate) {
-		this.orderDate = orderDate;
-	}
+    public Date getOrderDate() {
+        return orderDate;
+    }
 
-	
+    public void setOrderDate(Date orderDate) {
+        this.orderDate = orderDate;
+    }
 
-	public int getoId() {
-		return oId;
-	}
 
-	public void setoId(int oId) {
-		this.oId = oId;
-	}
+    public int getoId() {
+        return oId;
+    }
 
-	public String getoName() {
-		return oName;
-	}
+    public void setoId(int oId) {
+        this.oId = oId;
+    }
 
-	public void setoName(String oName) {
-		this.oName = oName;
-	}
+    public String getoName() {
+        return oName;
+    }
 
-	public double getoPrice() {
-		return oPrice;
-	}
+    public void setoName(String oName) {
+        this.oName = oName;
+    }
 
-	public void setoPrice(double oPrice) {
-		this.oPrice = oPrice;
-	}
+    public double getoPrice() {
+        return oPrice;
+    }
 
-	public int getoQuantity() {
-		return oQuantity;
-	}
+    public void setoPrice(double oPrice) {
+        this.oPrice = oPrice;
+    }
 
-	public void setoQuantity(int oQuantity) {
-		this.oQuantity = oQuantity;
-	}
+    public int getoQuantity() {
+        return oQuantity;
+    }
 
-	public User getUser() {
-		return user;
-	}
+    public void setoQuantity(int oQuantity) {
+        this.oQuantity = oQuantity;
+    }
 
-	public void setUser(User user) {
-		this.user = user;
-	}
-	
+    public User getUser() {
+        return user;
+    }
 
-	public double getTotalAmmout() {
-		return totalAmmout;
-	}
+    public void setUser(User user) {
+        this.user = user;
+    }
 
-	public void setTotalAmmout(double totalAmmout) {
-		this.totalAmmout = totalAmmout;
-	}
 
-	@Override
-	public String toString() {
-		return "Orders [oId=" + oId + ", oName=" + oName + ", oPrice=" + oPrice + ", oQuantity=" + oQuantity
-				+ ", orderDate=" + orderDate + ", totalAmmout=" + totalAmmout + ", user=" + user + "]";
-	}
+    public double getTotalAmmout() {
+        return totalAmmout;
+    }
+
+    public void setTotalAmmout(double totalAmmout) {
+        this.totalAmmout = totalAmmout;
+    }
+
+    @Override
+    public String toString() {
+        return "Orders [oId=" + oId + ", oName=" + oName + ", oPrice=" + oPrice + ", oQuantity=" + oQuantity
+                + ", orderDate=" + orderDate + ", totalAmmout=" + totalAmmout + ", user=" + user + "]";
+    }
 
 
 }

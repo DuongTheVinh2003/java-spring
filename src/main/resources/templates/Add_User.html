@@ -2,25 +2,25 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-	<meta charset="UTF-8" />
-	<title>Document</title>
-	<link rel="stylesheet" th:href="@{/css/Add_User.css}" />
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/css/Add_User.css}"/>
 </head>
 
 <body>
 <a href="/admin/services">Back to Services</a>
 <div class="addUser">
-	<h3 style="color: red;">ADD NEW USER/CUSTOMER</h3>
-	<form th:action="@{/addingUser}" method="post">
-		<label for="name">User_Name :</label>
-		<input type="text" id="name" name="uname" />
-		<label for="email">User_Email :</label>
-		<input type="email" id="email" name="uemail" />
-		<label for="telephone">User_Number :</label>
-		<input type="tel" id="telephone" name="unumber" pattern="[0-9]{10}" />
-		<input type="hidden" name="upassword" value="2330" />
-		<button type="submit">Add_User</button>
-	</form>
+    <h3 style="color: red;">ADD NEW USER/CUSTOMER</h3>
+    <form th:action="@{/addingUser}" method="post">
+        <label for="name">User_Name :</label>
+        <input type="text" id="name" name="uname"/>
+        <label for="email">User_Email :</label>
+        <input type="email" id="email" name="uemail"/>
+        <label for="telephone">User_Number :</label>
+        <input type="tel" id="telephone" name="unumber" pattern="[0-9]{10}"/>
+        <input type="hidden" name="upassword" value="2330"/>
+        <button type="submit">Add_User</button>
+    </form>
 </div>
 </body>
 

@@ -2,19 +2,19 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodFrenzy</title> 
+    <title>FoodFrenzy</title>
     <link rel="icon" type="image/x-icon" href="./Images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="" th:href="@{/css/Navigation.css}" />
-    <link rel="stylesheet" href="" th:href="@{css/Products.css}" />
+    <link rel="stylesheet" href="" th:href="@{/css/Navigation.css}"/>
+    <link rel="stylesheet" href="" th:href="@{css/Products.css}"/>
 </head>
 
 <body>
-    <nav th:replace="~{Navigation::navbar()}"></nav>
-    <div id="main-container">
-    <div id="biryani"> 
+<nav th:replace="~{Navigation::navbar()}"></nav>
+<div id="main-container">
+    <div id="biryani">
         <div class="item-card">
             <div class="card-top">
                 <i class="fa fa-star" id="rating">$.5</i>
@@ -25,8 +25,8 @@
             <p class="item-price">Price: Rs 410</p>
             <a href="/login" id="buy">Buy Now</a>
         </div>
- 
- <div class="item-card">
+
+        <div class="item-card">
             <div class="card-top">
                 <i class="fa fa-star" id="rating">$.5</i>
                 <i class="fa fa-heart-o add-to-cart" aria-label="Add to favorites"></i>
@@ -35,9 +35,9 @@
             <p class="item-name">Paneer Butter </p>
             <p class="item-price">Price: Rs 290</p>
             <a href="/login" id="buy">Buy Now</a>
-        </div> 
-         
-         <div class="item-card">
+        </div>
+
+        <div class="item-card">
             <div class="card-top">
                 <i class="fa fa-star" id="rating">$.4.5</i>
                 <i class="fa fa-heart-o add-to-cart" aria-label="Add to favorites"></i>
@@ -46,8 +46,8 @@
             <p class="item-name">Afgani Chicken</p>
             <p class="item-price">Price: Rs 410</p>
             <a href="/login" id="buy">Buy Now</a>
-        </div> 
-        
+        </div>
+
         <div class="item-card">
             <div class="card-top">
                 <i class="fa fa-star" id="rating">$.5</i>
@@ -57,8 +57,8 @@
             <p class="item-name">Butter Chicken</p>
             <p class="item-price">Price: Rs 380</p>
             <a href="/login" id="buy">Buy Now</a>
-        </div> 
-        
+        </div>
+
         <div class="item-card">
             <div class="card-top">
                 <i class="fa fa-star" id="rating">$.4.5</i>
@@ -68,8 +68,8 @@
             <p class="item-name">Laccha Paratha</p>
             <p class="item-price">Price: Rs 30</p>
             <a href="/login" id="buy">Buy Now</a>
-        </div> 
-        
+        </div>
+
         <div class="item-card">
             <div class="card-top">
                 <i class="fa fa-star" id="rating">$.5</i>
@@ -80,8 +80,8 @@
             <p class="item-price">Price: Rs 510</p>
             <a href="/login" id="buy">Buy Now</a>
         </div>
-      
-      <div class="item-card">
+
+        <div class="item-card">
             <div class="card-top">
                 <i class="fa fa-star" id="rating">$.4</i>
                 <i class="fa fa-heart-o add-to-cart" aria-label="Add to favorites"></i>
@@ -90,8 +90,8 @@
             <p class="item-name">Chicken Tikka</p>
             <p class="item-price">Price: Rs 310</p>
             <a href="/login" id="buy">Buy Now</a>
-        </div> 
-        
+        </div>
+
         <div class="item-card">
             <div class="card-top">
                 <i class="fa fa-star" id="rating">$.4.5</i>
@@ -101,9 +101,9 @@
             <p class="item-name">Chilli Potato</p>
             <p class="item-price">Price: Rs 150</p>
             <a href="/login" id="buy">Buy Now</a>
-        </div>   
-         
-         <div class="item-card">
+        </div>
+
+        <div class="item-card">
             <div class="card-top">
                 <i class="fa fa-star" id="rating">$.4.5</i>
                 <i class="fa fa-heart-o add-to-cart" aria-label="Add to favorites"></i>
@@ -112,9 +112,9 @@
             <p class="item-name">Chola Bhatura</p>
             <p class="item-price">Price: Rs 180</p>
             <a href="/login" id="buy">Buy Now</a>
-        </div>   
-         
-         <div class="item-card">
+        </div>
+
+        <div class="item-card">
             <div class="card-top">
                 <i class="fa fa-star" id="rating">$.4.0</i>
                 <i class="fa fa-heart-o add-to-cart" aria-label="Add to favorites"></i>
@@ -123,8 +123,8 @@
             <p class="item-name">Gulab Jamun</p>
             <p class="item-price">Price: Rs 50</p>
             <a href="/login" id="buy">Buy Now</a>
-        </div>   
-        
+        </div>
+
         <div class="item-card">
             <div class="card-top">
                 <i class="fa fa-star" id="rating">$.4.5</i>
@@ -134,8 +134,8 @@
             <p class="item-name">Chowmein</p>
             <p class="item-price">Price: Rs 150</p>
             <a href="/login" id="buy">Buy Now</a>
-        </div>   
-        
+        </div>
+
         <div class="item-card">
             <div class="card-top">
                 <i class="fa fa-star" id="rating">$.5.0</i>
@@ -145,16 +145,16 @@
             <p class="item-name">Paneer Do Pyaza</p>
             <p class="item-price">Price: Rs 270</p>
             <a href="/login" id="buy">Buy Now</a>
-        </div>  
-         
+        </div>
+
     </div>
-    </div>
-    <script>
-        document.getElementById("buy").addEventListener("click", function (event) {
-            event.preventDefault();
-            alert("Please Login as a User to buy Products");
-        });
-    </script>
+</div>
+<script>
+    document.getElementById("buy").addEventListener("click", function (event) {
+        event.preventDefault();
+        alert("Please Login as a User to buy Products");
+    });
+</script>
 </body>
 
 </html>
